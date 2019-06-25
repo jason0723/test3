@@ -8,8 +8,13 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      // name: 'HelloWorld',
+      redirect: "/home"
+      // component: HelloWorld
+    },{
+      path:'/home',
+      name:'HelloWorld',
+      component:HelloWorld
     }
   ]
 })
